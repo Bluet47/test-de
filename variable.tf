@@ -1,10 +1,16 @@
 variable "project_id" {
-  description = "test-flask-api-460611"
+  description = "GCP project ID"
   type        = string
 }
 
 variable "region" {
-  description = "Region to deploy the resources"
+  description = "GCP region"
   type        = string
-  default     = "us-central1"
+  default     = "europe-west2"
+}
+
+variable "zone" {
+  description = "GCP zone"
+  type        = string
+  default     = "europe-west2-b"
 }
